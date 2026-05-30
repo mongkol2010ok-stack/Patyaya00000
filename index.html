@@ -1,1 +1,960 @@
 
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>เที่ยวพัทยา | ที่เที่ยวพัทยา คาเฟ่ริมทะเล จุดเช็กอิน และบริการรถเที่ยวพัทยา</title>
+
+<meta name="description" content="รวมที่เที่ยวพัทยา ชายหาด คาเฟ่ริมทะเล ตลาดกลางคืน จุดเช็กอินยอดนิยม และบริการรถเที่ยวพัทยาครบวงจร">
+
+<meta name="keywords" content="เที่ยวพัทยา, ที่เที่ยวพัทยา, หาดพัทยา, เกาะล้าน, ตลาดน้ำ 4 ภาค, คาเฟ่พัทยา, รถเที่ยวพัทยา">
+
+
+<!-- 🔻 โลโก้เว็บไซต์ -->
+<link rel="icon" href="YOUR-LOGO-LINK">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:
+linear-gradient(
+to bottom,
+#eef8ff,
+#dff2ff,
+#cfeaff,
+#f4fbff
+);
+color:#3f5f3f;
+line-height:1.7;
+overflow-x:hidden;
+}
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+
+padding:14px 6%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(255,255,245,0.82);
+
+backdrop-filter:blur(14px);
+
+z-index:999;
+
+box-shadow:0 2px 12px rgba(255,223,120,0.18);
+
+}
+
+/* ================= LOGO ================= */
+
+.logo-area{
+
+display:flex;
+align-items:center;
+gap:14px;
+
+}
+
+.logo-img{
+
+width:72px;
+height:72px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+background:white;
+
+padding:4px;
+
+border:3px solid rgba(255,255,255,0.9);
+
+box-shadow:0 4px 15px rgba(0,0,0,0.10);
+
+}
+
+.logo-text h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2e8b57;
+}
+
+.logo-text p {
+  font-size: 13px;
+  margin-top: 4px;
+  color: #000000;
+}
+/* ================= MENU ================= */
+
+.menu{
+
+display:flex;
+gap:20px;
+
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.menu a:hover{
+
+color:#e0b93f;
+
+}
+
+/* ================= HERO ================= */
+
+header{
+height:100vh;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
+background:
+linear-gradient(
+to bottom,
+rgba(200,255,200,0.70),
+rgba(180,245,180,0.65),
+rgba(220,255,220,0.60)
+),
+url('YOUR-HERO-IMAGE-LINK');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:
+linear-gradient(
+to bottom,
+rgba(135,206,250,0.20),
+rgba(173,216,230,0.35)
+);
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:900px;
+
+padding:20px;
+
+}
+
+.hero-content h1 {
+  font-size: 3.3em;
+  color: #006400;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+}
+.hero-content p{
+
+font-size:1.1em;
+
+color:#7b6530;
+
+margin-bottom:35px;
+
+}
+
+.hero-btn{
+
+display:inline-block;
+
+padding:15px 34px;
+
+background:
+linear-gradient(
+135deg,
+#f7d76a,
+#e8be45
+);
+
+color:white;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:bold;
+
+transition:0.3s;
+
+box-shadow:0 6px 18px rgba(232,190,69,0.25);
+
+}
+
+.hero-btn:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ================= SECTION ================= */
+
+section{
+
+padding:90px 8%;
+
+}
+
+.title{
+
+text-align:center;
+
+margin-bottom:50px;
+
+}
+
+.title h2 {
+  font-size: 2.4em;
+  color: #28a745;
+  margin-bottom: 12px;
+}
+.title p{
+
+color:#9a8142;
+
+}
+
+/* ================= GRID ================= */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+/* ================= CARD ================= */
+
+.card{
+
+background:rgba(255,255,255,0.94);
+
+border-radius:24px;
+
+overflow:hidden;
+
+box-shadow:0 8px 20px rgba(255,223,120,0.16);
+
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card-img{
+
+width:100%;
+height:240px;
+
+object-fit:cover;
+
+background:#fff4bf;
+
+}
+
+.card-content{
+
+padding:24px;
+
+}
+
+.card-content h3{
+
+color:#c89b1f;
+
+margin-bottom:10px;
+
+}
+
+.card-content p{
+
+color:#7b6d4f;
+
+font-size:15px;
+
+}
+
+/* ================= CONTACT ================= */
+
+.contact-box{
+
+background:rgba(255,255,255,0.96);
+
+padding:40px;
+
+border-radius:30px;
+
+box-shadow:0 8px 20px rgba(255,223,120,0.16);
+
+text-align:center;
+
+}
+
+.contact-btn{
+
+display:block;
+
+width:90%;
+max-width:340px;
+
+margin:14px auto;
+
+padding:16px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:white;
+
+font-weight:bold;
+
+font-size:18px;
+
+transition:0.3s;
+
+}
+
+.contact-btn:hover{
+
+transform:scale(1.05);
+
+}
+
+.call{
+
+background:
+linear-gradient(
+135deg,
+#f9c74f,
+#f4a261
+);
+
+}
+
+.line{
+
+background:
+linear-gradient(
+135deg,
+#8ac926,
+#52b788
+);
+
+}
+
+.whatsapp{
+
+background:
+linear-gradient(
+135deg,
+#25d366,
+#1ebc57
+);
+
+}
+
+/* ================= BLOG ================= */
+
+.blog{
+
+background:white;
+
+padding:25px;
+
+border-radius:22px;
+
+box-shadow:0 5px 15px rgba(255,223,120,0.12);
+
+transition:0.3s;
+
+}
+
+.blog:hover{
+
+transform:translateY(-6px);
+
+}
+
+.blog h3{
+
+color:#c89b1f;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+background:
+linear-gradient(
+135deg,
+#f7d76a,
+#e8be45
+);
+
+color:white;
+
+text-align:center;
+
+padding:50px 20px;
+
+margin-top:40px;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+.logo-img{
+
+width:58px;
+height:58px;
+
+}
+
+.logo-text h1{
+
+font-size:20px;
+
+}
+
+.logo-text p{
+
+font-size:11px;
+
+}
+
+.menu{
+
+gap:12px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero-content h1{
+
+font-size:2.2em;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+<div class="logo-area">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1724.png?w=1024"
+alt="เที่ยวพัทยา"
+class="logo-img">
+
+<div class="logo-text">
+
+<h1>เที่ยวพัทยา</h1>
+<p>Pattaya Travel Guide</p>
+
+</div>
+
+</div>
+
+<div class="menu">
+
+<a href="#">หน้าแรก</a>
+<a href="#travel">ที่เที่ยว</a>
+<a href="#cafe">คาเฟ่</a>
+<a href="#service">บริการรถ</a>
+<a href="#blog">บทความ</a>
+<a href="#contact">ติดต่อ</a>
+
+</div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<header>
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h2>เที่ยวพัทยา เมืองท่องเที่ยวริมทะเลยอดนิยมระดับโลกของประเทศไทย</h2>
+
+<p>
+  พัทยา จังหวัดชลบุรี เป็นหนึ่งในเมืองท่องเที่ยวที่ได้รับความนิยมมากที่สุดของประเทศไทย โดดเด่นด้วยชายหาดสวยงาม เกาะล้าน คาเฟ่ริมทะเล สวนน้ำ สถานบันเทิง และแหล่งท่องเที่ยวครบครัน เหมาะสำหรับการพักผ่อนทั้งครอบครัว คู่รัก และกลุ่มเพื่อน สามารถเที่ยวได้ตลอดทั้งปี พร้อมอาหารทะเลสดใหม่และกิจกรรมทางทะเลมากมาย
+</p>
+
+<a href="#travel" class="hero-btn">
+  เริ่มเที่ยวพัทยา
+</a>
+
+</div>
+
+</header>
+
+</dib>
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1721.png?w=1024"
+alt="เที่ยวพัทยา"
+class="card-img">
+
+</div>
+
+</header>
+
+<!-- ================= TRAVEL ================= -->
+
+<section id="travel">
+
+<div class="title">
+
+<h3>สถานที่ท่องเที่ยวยอดนิยมพัทยา</h3>
+
+<p>
+  แนะนำที่เที่ยวพัทยายอดนิยม ไม่ว่าจะเป็นหาดพัทยา เกาะล้าน ปราสาทสัจธรรม ตลาดน้ำ 4 ภาค และเขาพระตำหนัก เหมาะสำหรับนักท่องเที่ยวที่กำลังมองหาสถานที่พักผ่อนริมทะเลและจุดเช็กอินชื่อดังของภาคตะวันออก
+</p>
+<h4>สถานที่ท่องเที่ยว 5 แห่ง</h4>
+<p>หาดพัทยา (Pattaya Beach)
+
+เกาะล้าน (Koh Larn)
+
+ปราสาทสัจธรรม (Sanctuary of Truth)
+
+ตลาดน้ำ 4 ภาค พัทยา
+
+เขาพระตำหนัก</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1740.png?w=1024"
+alt="หาดพัทยา (Pattaya Beach)
+"
+class="card-img">
+
+<div class="card-content">
+
+<h3>หาดพัทยา (Pattaya Beach)
+</h3>
+
+<p>
+หาดพัทยาเป็นชายหาดชื่อดังใจกลางเมืองที่มีบรรยากาศคึกคักตลอดทั้งวัน เหมาะสำหรับการเดินเล่นริมทะเล เล่นกิจกรรมทางน้ำ และชมพระอาทิตย์ตกที่สวยงาม นักท่องเที่ยวสามารถเลือกพักโรงแรม ร้านอาหาร และคาเฟ่ริมชายหาดได้อย่างสะดวก ถือเป็นแลนด์มาร์กสำคัญของเมืองพัทยาที่ไม่ควรพลาด
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1725.png?w=1024"
+alt="เกาะล้าน (Koh Larn)"
+class="card-img">
+
+<div class="card-content">
+
+<h3>เกาะล้าน (Koh Larn)</h3>
+
+<p>
+เกาะล้านเป็นสถานที่ท่องเที่ยวยอดนิยมที่มีน้ำทะเลใส หาดทรายขาว และบรรยากาศเงียบสงบ เหมาะสำหรับการดำน้ำ พักผ่อนริมทะเล และเล่นกิจกรรมทางน้ำต่าง ๆ ถือเป็นหนึ่งในสถานที่ท่องเที่ยวที่ได้รับความนิยมมากที่สุดใกล้พัทยา
+</p>
+  
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1727.png?w=1024"
+alt="ปราสาทสัจธรรม (Sanctuary of Truth)"
+class="card-img">
+
+<div class="card-content">
+
+<h3>ปราสาทสัจธรรม (Sanctuary of Truth)</h3>
+
+<p>
+   ปราสาทสัจธรรมเป็นสถาปัตยกรรมไม้แกะสลักขนาดใหญ่ที่มีความสวยงามและเป็นเอกลักษณ์ของพัทยา สะท้อนศิลปะ วัฒนธรรม และปรัชญาของไทยได้อย่างวิจิตรตระการตา เป็นอีกหนึ่งจุดเช็กอินสำคัญของนักท่องเที่ยวทั้งชาวไทยและต่างชาติ
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1738.png?w=1024"
+alt="ตลาดน้ำ 4 ภาค พัทยา"
+class="card-img">
+
+<div class="card-content">
+
+<h3>ตลาดน้ำ 4 ภาค พัทยา</h3>
+
+<p>
+ตลาดน้ำ 4 ภาค พัทยา เป็นแหล่งท่องเที่ยวเชิงวัฒนธรรมที่รวบรวมอาหารพื้นเมือง สินค้าหัตถกรรม และบรรยากาศตลาดน้ำไทยไว้ในที่เดียว นักท่องเที่ยวสามารถเดินชม ชิมอาหาร และถ่ายภาพสวย ๆ ได้ตลอดวัน
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1741.png?w=1024"
+alt="เขาพระตำหนัก"
+class="card-img">
+
+<div class="card-content">
+
+<h3>เขาพระตำหนัก (Pattaya</h3>
+
+<p>
+  เขาพระตำหนักเป็นจุดชมวิวที่สามารถมองเห็นอ่าวพัทยาได้แบบพาโนรามา เป็นสถานที่ยอดนิยมสำหรับการถ่ายภาพ โดยเฉพาะในช่วงเย็นที่สามารถชมพระอาทิตย์ตกเหนือทะเลได้อย่างสวยงาม
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CAFE ================= -->
+
+<section id="cafe">
+
+<div class="title">
+
+<h3>คาเฟ่พัทยา</h3>
+
+<p>
+  รวมคาเฟ่ยอดนิยมวิวทะเลสวย เหมาะสำหรับสายถ่ายรูปและพักผ่อน
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1728.png?w=1024"
+alt="Cave Beach Club Pattaya"
+class="card-img">
+
+<div class="card-content">
+
+<h3>Cave Beach Club Pattaya</h3>
+
+<p>
+เป็นคาเฟ่และบีชคลับชื่อดังริมทะเลที่โดดเด่นด้วยการตกแต่งสไตล์บาหลี บรรยากาศสุดชิล และมุมถ่ายภาพยอดนิยมมากมาย เหมาะสำหรับการนั่งพักผ่อน จิบกาแฟ และชมวิวทะเลในบรรยากาศสุดพิเศษ
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+  
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1730.png?w=1024"
+alt="The Sky Gallery Pattaya"
+class="card-img">
+
+<div class="card-content">
+
+<h3>The Sky Gallery Pattaya</h3>
+
+<p>
+เป็นร้านอาหารและคาเฟ่วิวทะเลชื่อดังที่ตั้งอยู่บริเวณเขาพระตำหนัก โดดเด่นด้วยวิวทะเลแบบพาโนรามา บรรยากาศโรแมนติก และจุดชมพระอาทิตย์ตกที่สวยงาม เหมาะสำหรับการพักผ่อนและรับประทานอาหารริมทะเล
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICE ================= -->
+
+<section id="service">
+
+<div class="title">
+
+<h3>บริการรถเที่ยวพัทยา </h3>
+
+<p>
+บริการรถพร้อมคนขับ เที่ยวทั่วพัทยสอย่างสะดวก ปลอดภัย เป็นส่วนตัว พร้อมพาเที่ยวทะเล คาเฟ่ จุดชมวิว และสถานที่ท่องเที่ยวยอดนิยมตลอดการเดินทาง
+</p>
+
+</div>
+
+<div class="contact-box">
+
+<h2>📞 ติดต่อจองรถเที่ยวหัวหิน</h2>
+
+<p>
+บริการรับส่งสนามบิน เที่ยวทะเล คาเฟ่ ร้านอาหาร และสถานที่ท่องเที่ยวยอดนิยมทั่วหัวหินและจังหวัดประจวบคีรีขันธ์
+</p>
+
+<a href="tel:+66636385818" class="contact-btn call">
+📞 โทรเลย
+</a>
+
+<a href="https://line.me/ti/p/N3Gtj86LCL"
+class="contact-btn line">
+💬 LINE
+</a>
+
+<a href="https://wa.me/66636385818"
+class="contact-btn whatsapp">
+🟢 WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= BLOG ================= -->
+
+<section id="blog">
+
+<div class="title">
+
+<h3>บทความเที่ยวเมืองพัทยา </h3>
+
+<p>
+เที่ยวพัทยา 2 วัน 1 คืน รวมที่เที่ยว คาเฟ่ และจุดเช็กอินยอดนิยม
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1737.png?w=1024"
+alt="เที่ยวเมืองพัทยา"
+class="card-img">
+
+<div class="card-content">
+
+<div class="blog">
+
+<h3>เที่ยวพัทยา 2 วัน 1 คืน รวมที่เที่ยว คาเฟ่ และจุดเช็กอินยอดนิยม</h3>
+
+<p>
+
+แนะนำแพลนเที่ยวพัทยาแบบครบทุกจุดเช็กอิน ไม่ว่าจะเป็นหาดพัทยา เกาะล้าน คาเฟ่ริมทะเล จุดชมวิวเขาพระตำหนัก และร้านอาหารทะเลชื่อดัง เหมาะสำหรับนักท่องเที่ยวที่ต้องการเที่ยวพัทยาแบบครบจบในทริปเดียว พร้อมข้อมูลการเดินทางและสถานที่ยอดนิยมที่กำลังได้รับความสนใจในปี 2026
+</p>
+
+</div>
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1736.png?w=1024"
+alt="เที่ยวเมืองพัทยา"
+class="card-img">
+
+<div class="card-content">
+
+<div class="blog">
+
+<h3>รวมที่เที่ยวพัทยาอัปเดตล่าสุด จุดถ่ายรูปสวย คาเฟ่ดัง และแลนด์มาร์กห้ามพลาด</h3>
+
+<p>
+พาอัปเดตสถานที่ท่องเที่ยวพัทยาล่าสุด ทั้งคาเฟ่เปิดใหม่ จุดชมวิวริมทะเล เกาะล้าน ปราสาทสัจธรรม และแหล่งท่องเที่ยวชื่อดังที่กำลังเป็นกระแส เหมาะสำหรับสายคอนเทนต์ สายถ่ายรูป และนักท่องเที่ยวที่กำลังมองหาสถานที่เช็กอินใหม่ ๆ ในพัทยา
+</p>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<div class="title">
+
+<h3>ติดต่อเรา</h3>
+
+<p>
+หากคุณกำลังวางแผนเที่ยวพัทยา ต้องการข้อมูลสถานที่ท่องเที่ยว คาเฟ่ยอดนิยม ที่พัก หรือบริการรถพร้อมคนขับ ทีมงานของเราพร้อมให้คำปรึกษาและดูแลการเดินทางของคุณอย่างมืออาชีพ เพื่อให้ทุกทริปสะดวก ปลอดภัย และน่าประทับใจ ติดต่อเราได้ตลอด 24 ชั่วโมง
+</p>
+</p>
+
+</div>
+
+<div class="contact-box">
+
+<a href="tel:+66636385818"
+class="contact-btn call">
+📞 โทรศัพท์
+</a>
+
+<a href="https://line.me/ti/p/N3Gtj86LCL"
+class="contact-btn line">
+💬 LINE
+</a>
+
+<a href="https://wa.me/66636385818"
+class="contact-btn whatsapp">
+🟢 WhatsApp
+</a>
+
+</div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer style="
+background:linear-gradient(135deg,#f8d97a,#ffd6c2);
+color:#5b4636;
+text-align:center;
+padding:60px 20px;
+margin-top:40px;
+">
+
+<h2 style="margin-bottom:15px;">
+เที่ยวอยุธยา
+</h2>
+
+<p style="max-width:800px;margin:auto;line-height:1.8;">
+เว็บไซต์แนะนำสถานที่ท่องเที่ยวพัทยา จุดชมวิวเขาพระตำ และชายหาด และเกาะล้านที่สวยงาม คาเฟ่ยอดนิยม
+และบริการรถเที่ยวพัทยาแบบส่วนตัว พร้อมข้อมูลท่องเที่ยวครบวงจร
+สำหรับนักท่องเที่ยวชาวไทยและต่างชาติ
+</p>
+
+<br>
+
+<p>
+📧 Email :
+<a href="mailto:mongkol2010nk@gmail.com"
+style="color:#5b4636;text-decoration:none;">
+mongkol2010nk@gmail.com
+</a>
+</p>
+
+<p>
+📞 โทร :
+<a href="tel:+66636385818"
+style="color:#5b4636;text-decoration:none;">
+063-638-5818
+</a>
+</p>
+
+<p>
+💬 LINE :
+<a href="https://line.me/ti/p/N3Gtj86LCL"
+target="_blank"
+style="color:#5b4636;text-decoration:none;">
+เพิ่มเพื่อน LINE
+</a>
+</p>
+
+<p>
+🟢 WhatsApp :
+<a href="https://wa.me/66636385818"
+target="_blank"
+style="color:#5b4636;text-decoration:none;">
+Chat WhatsApp
+</a>
+</p>
+
+<br>
+
+<hr style="
+max-width:900px;
+margin:25px auto;
+border:0;
+height:1px;
+background:rgba(0,0,0,0.15);
+">
+
+<p>
+© 2026 เที่ยวพัทยา | Pattays Guide Thailand
+</p>
+
+<p style="font-size:14px;margin-top:10px;">
+สงวนลิขสิทธิ์ทั้งหมด ห้ามคัดลอก ดัดแปลง หรือเผยแพร่ข้อมูล รูปภาพ
+และเนื้อหาภายในเว็บไซต์โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษร
+</p>
+
+<p style="font-size:13px;margin-top:10px;">
+All Rights Reserved. Content, images and design on this website
+are protected by copyright laws.
+</p>
+
+</footer>
+
